@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Events</title>
+  <link rel="stylesheet" href="PastEvents.css">
+</head>
+<body>
+  <header id="currentDate">
+    <p>Today is <span id="dateDisplay"></span></p>
+  </header>
+  <div class="container">
+    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="dd/mm" name="dateInput" id='dateInput' required />
+        <label for="dateInput" class="form__label">dd/mm</label>
+    </div>
+    <div class="buttonsgroup">
+      <button id="specificDateBtn">Specific date in the past</button>
+      <button id="todayBtn">Today in the past</button>
+    </div>
+  </div>
+  <div id="eventsDisplay">
+    <p>Event:</p>
+    <ul id="eventsList"></ul>
+  </div>
+  <script src="PastEvents.js"></script>
+</body>
+</html>
